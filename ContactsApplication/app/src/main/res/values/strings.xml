@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">ContactsApplication</string>
-    <string name="ta_aplikacja_wymaga_dost_pu_do_twoich_kontakt_w_aby_dzia_a_poprawnie">Ta aplikacja wymaga dostępu do Twoich kontaktów, aby działać poprawnie.</string>
-    <string name="chc_skorzysta_z_aplikacji">Chcę skorzystać z aplikacji</string>
-    <string name="otrzymane_kontakty">Otrzymane kontakty:</string>
-    <string name="ta_aplikacja_korzysta_z_zewn_trznej_aplikacji_contactsprovider_do_uzyskania_danych_o_kontaktach_naby_skorzysta_z_aplikacji_zezw_l_contactsprovider_na_dost_p_do_kontakt_w">Ta aplikacja korzysta z zewnętrznej aplikacji ContactsProvider do uzyskania danych o kontaktach.\nAby skorzystać z aplikacji zezwól ContactsProvider na dostęp do kontaktów</string>
-</resources>
