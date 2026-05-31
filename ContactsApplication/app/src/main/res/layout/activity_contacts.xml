@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otrzymane_kontakty"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:id="@+id/errorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nie można korzystać z aplikacji bez przyznania dostępu do kontaktów."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zamknij"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/btnGrantPermission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Przyznaj uprawnienia" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ta_aplikacja_wymaga_dost_pu_do_twoich_kontakt_w_aby_dzia_a_poprawnie"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:paddingBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chc_skorzysta_z_aplikacji" />
+
+    <LinearLayout
+        android:id="@+id/errorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ta_aplikacja_korzysta_z_zewn_trznej_aplikacji_contactsprovider_do_uzyskania_danych_o_kontaktach_naby_skorzysta_z_aplikacji_zezw_l_contactsprovider_na_dost_p_do_kontakt_w"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zamknij"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/btnGrantPermission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Przyznaj uprawnienia" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
